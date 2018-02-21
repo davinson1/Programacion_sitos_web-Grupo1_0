@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Document</title>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
 
 </head>
 <body>
@@ -43,7 +43,7 @@
                 <a class="nav-link" href="#">Reportes especiales</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Operaciones matemáticas</a>
+                  <a class="nav-link" href="src/operaciones.php">Operaciones matemáticas</a>
                 </li>
 
           </ul>
@@ -55,12 +55,79 @@
       </nav>
 
 
+      <div class="container-fluid">
+        
+      <div class="jumbotron">
 
 
-  <div class="container">
+      <form method="post">
+  <div class="form-row align-items-center">
+    <div class="col-sm-3 my-1">
+      <label class="sr-only" for="inlineFormInputName">Primer numero</label>
+      <input type="number" class="form-control" id="num1" name="num1" placeholder="Ingrese el primer numero">
+    </div>
+
+    <div class="col-sm-3 my-1">
+      <label class="sr-only" for="inlineFormInputName">Primer numero</label>
+      <input type="number" class="form-control"  name="num2" placeholder="Ingrese el segundo numero">
+    </div>
 
     
+ 
+  </div>
 
+
+  
+
+
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="option" id="suma1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Suma
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Resta
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Multiplicacion
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Divicion
+  </label>
+</div>
+
+
+<div class="col-auto my-1">
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </div>
+
+
+  
+</form>
+     
+
+<?php
+
+$num1=$_POST['num1'];
+$num2=$_POST['num2'];
+
+
+
+?>
+
+
+</div>
 
     </div>
 
@@ -68,7 +135,7 @@
 
 
 
-  <script src="js/jquery-3.2.1.js"></script>
-<script src="js/bootstrap.min.js"></script>
+  <script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

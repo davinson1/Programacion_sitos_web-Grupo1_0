@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Davinson </title>
+	<style type="text/css">
+
+div#espacio{
+    padding-bottom: 5%;
+    padding-left: 400px;
+    padding-top: 2%;
+    background-color: rgba();
+}
+
+ul{list-style:none;margin:0px;padding:0px;clear:both;}
+ul li{margin:0px 10px;padding:0px;float:left;}
+ul li a{display:block;text-decoration:none;}
+		ul#ejm3 li a{
+        position: relative;
+        color:#FFF;
+        overflow:hidden;
+    }
+    ul#ejm3 li a:before{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #FFF;
+        color: #0F7C67;
+        content: attr(title);
+        transition: transform 0.3s ease 0s;
+    }
+    ul#ejm3 li a span{
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #0F7C67;
+        transition: transform 0.3s ease 0s;
+        z-index: 2;
+    }
+
+    ul#ejm3 li a:hover span{
+        transform: translatex(100%);
+    }
+	</style>
+</head>
+<body>
+<div id="espacio">
+    <ul id="ejm3">
+            <li><a href="#" title="Link 1"><span>Link 1</span></a></li>
+            <li><a href="#" title="Link 2"><span>Link 2</span></a></li>
+            <li><a href="#" title="Link 3"><span>Link 3</span></a></li>
+            <li><a href="#" title="Link 4"><span>Link 4</span></a></li>
+            <li><a href="#" title="Link 5"><span>Link 5</span></a></li>
+        </ul>
+</div>
+</body>
+</html>
+
